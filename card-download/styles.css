@@ -74,6 +74,7 @@ hr {
 .bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .number {
@@ -96,4 +97,25 @@ hr {
 .text-box p {
   font-size: 0.6em;
   margin-top: 0;
+}
+
+.image {
+  width: 2.8em;
+  display: block;
+  border: 3px solid rgb(134, 145, 225);
+  border-radius: 50%;
+  position: relative;
+}
+
+.images {
+  display: flex;
+  max-height: 50px;
+}
+
+.images img:nth-child(1) {
+  z-index: 3;
+}
+
+.images img:nth-child(2) {
+  z-index: 1;
 }
